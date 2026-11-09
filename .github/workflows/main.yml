@@ -235,7 +235,7 @@ jobs:
 
       - name: 6. Build Signed Release Android App Bundle (.aab) & APK (.apk)
         run: |
-          gradle :app:bundleRelease :app:assembleRelease -x lint -x lintVitalRelease --no-daemon --console=plain
+          gradle :app:bundleRelease :app:assembleRelease -x lint --no-daemon --console=plain
 
       - name: 7. Collect Signed Release Outputs (.aab & .apk)
         run: |
